@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fluentry - Master English with AI</title>
-    <meta name="description" content="Transform your English learning with AI-powered lessons, smart vocabulary training, and interactive exercises.">
+    <title>Fluentry Support - Help Center</title>
+    <meta name="description" content="Get help with Fluentry. Find answers to common questions and contact support.">
     <style>
         * {
             margin: 0;
@@ -16,10 +16,11 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
+            background: #f8f9fa;
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -28,140 +29,96 @@
         header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 100px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
         
         header h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
         }
         
         header p {
-            font-size: 1.3rem;
-            margin-bottom: 30px;
+            font-size: 1.1rem;
             opacity: 0.95;
         }
         
-        .cta-button {
-            display: inline-block;
+        /* Main Content */
+        main {
+            padding: 60px 20px;
+        }
+        
+        .faq-section {
             background: white;
-            color: #667eea;
-            padding: 15px 40px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: transform 0.2s;
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-2px);
-        }
-        
-        /* Features */
-        .features {
-            padding: 80px 20px;
-            background: #f8f9fa;
-        }
-        
-        .features h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 60px;
-            color: #667eea;
-        }
-        
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-        }
-        
-        .feature-card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 40px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
-        .feature-card h3 {
+        .faq-section h2 {
             color: #667eea;
-            margin-bottom: 15px;
-            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-size: 2rem;
         }
         
-        .feature-card p {
+        .faq-item {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .faq-item h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .faq-item p {
             color: #666;
             line-height: 1.8;
         }
         
-        /* How It Works */
-        .how-it-works {
-            padding: 80px 20px;
+        /* Contact Section */
+        .contact-section {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
         }
         
-        .how-it-works h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 60px;
+        .contact-section h2 {
             color: #667eea;
-        }
-        
-        .steps {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-        
-        .step {
-            flex: 1;
-            min-width: 250px;
-            text-align: center;
-        }
-        
-        .step-number {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin: 0 auto 20px;
-        }
-        
-        .step h3 {
-            margin-bottom: 10px;
-            color: #333;
-        }
-        
-        .step p {
-            color: #666;
-        }
-        
-        /* Download Section */
-        .download {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
-        
-        .download h2 {
-            font-size: 2.5rem;
             margin-bottom: 20px;
+            font-size: 2rem;
         }
         
-        .download p {
-            font-size: 1.2rem;
+        .contact-section p {
+            color: #666;
             margin-bottom: 30px;
-            opacity: 0.95;
+            font-size: 1.1rem;
+        }
+        
+        .contact-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        
+        .contact-button:hover {
+            transform: translateY(-2px);
         }
         
         /* Footer */
@@ -170,6 +127,7 @@
             color: white;
             padding: 40px 20px;
             text-align: center;
+            margin-top: 60px;
         }
         
         footer a {
@@ -185,17 +143,17 @@
         /* Responsive */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2.5rem;
-            }
-            
-            header p {
-                font-size: 1.1rem;
-            }
-            
-            .features h2,
-            .how-it-works h2,
-            .download h2 {
                 font-size: 2rem;
+            }
+            
+            .faq-section,
+            .contact-section {
+                padding: 30px 20px;
+            }
+            
+            .faq-section h2,
+            .contact-section h2 {
+                font-size: 1.5rem;
             }
         }
     </style>
@@ -204,89 +162,84 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <h1>Fluentry</h1>
-            <p>Master English with AI-powered lessons, smart vocabulary training, and interactive exercises</p>
-            <a href="https://apps.apple.com/app/fluentry" class="cta-button">Download on App Store</a>
+            <h1>Fluentry Support</h1>
+            <p>We're here to help you master English</p>
         </div>
     </header>
 
-    <!-- Features -->
-    <section class="features">
+    <!-- Main Content -->
+    <main>
         <div class="container">
-            <h2>Why Fluentry?</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>AI-Powered Learning</h3>
-                    <p>Experience personalized education with cutting-edge AI technology. Get custom lessons tailored to your level, interests, and goals.</p>
+            <!-- FAQ Section -->
+            <section class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <h3>How do I get started with Fluentry?</h3>
+                    <p>Simply download the app from the App Store, create an account, and take our quick assessment. Our AI will determine your current English level and create a personalized learning path just for you.</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Smart Vocabulary</h3>
-                    <p>Master thousands of words with our intelligent vocabulary system featuring spaced repetition, pronunciations, and real-world examples.</p>
+                
+                <div class="faq-item">
+                    <h3>Is Fluentry suitable for beginners?</h3>
+                    <p>Absolutely! Fluentry is designed for learners at all levels, from complete beginners to advanced users. Our AI adapts to your proficiency level and creates appropriate lessons for you.</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Interactive Exercises</h3>
-                    <p>Learn through fun games and challenges including multiple choice, fill in the blanks, matching pairs, and more.</p>
+                
+                <div class="faq-item">
+                    <h3>How does the AI lesson generator work?</h3>
+                    <p>Our AI analyzes your interests, current level, and learning goals to create custom lessons on topics that matter to you. Simply tell us what you want to learn, and we'll generate engaging content instantly.</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Conversation Practice</h3>
-                    <p>Build confidence by chatting with AI tutors who provide instant feedback and natural corrections.</p>
+                
+                <div class="faq-item">
+                    <h3>Can I practice speaking English in the app?</h3>
+                    <p>Yes! Fluentry includes conversation practice with AI tutors who provide instant feedback. You can also practice pronunciation with our speaking exercises.</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Progress Tracking</h3>
-                    <p>Stay motivated with detailed analytics, daily streaks, achievement badges, and beautiful visualizations.</p>
+                
+                <div class="faq-item">
+                    <h3>How do the widgets work?</h3>
+                    <p>Long press on your home screen, tap the plus icon, search for Fluentry, and add your preferred widget size. You can customize what information is displayed in the widget settings.</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Beautiful Widgets</h3>
-                    <p>Track your progress right from your home screen with stunning widgets showing streaks, stats, and word of the day.</p>
+                
+                <div class="faq-item">
+                    <h3>What happens if I miss a day of my streak?</h3>
+                    <p>Your streak will reset to zero, but don't worry! The important thing is building consistent learning habits. Start a new streak and keep going.</p>
                 </div>
-            </div>
-        </div>
-    </section>
+                
+                <div class="faq-item">
+                    <h3>Can I use Fluentry offline?</h3>
+                    <p>You can review your saved vocabulary offline. However, AI-powered features like lesson generation and conversation practice require an internet connection.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How do I delete my account?</h3>
+                    <p>Go to Settings in the app, scroll down to Account, and select Delete Account. Please note that this action is permanent and cannot be undone.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Is my data secure?</h3>
+                    <p>Yes! We take your privacy seriously. All your data is encrypted and stored securely. We never share your personal information with third parties. Read our Privacy Policy for more details.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How often is new content added?</h3>
+                    <p>We regularly update the app with new features, vocabulary, and exercises. Plus, with our AI lesson generator, you have access to unlimited fresh content on any topic.</p>
+                </div>
+            </section>
 
-    <!-- How It Works -->
-    <section class="how-it-works">
-        <div class="container">
-            <h2>How It Works</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Download & Sign Up</h3>
-                    <p>Get started in seconds with our quick onboarding process</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Take Assessment</h3>
-                    <p>Let our AI determine your current English level</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Start Learning</h3>
-                    <p>Follow your personalized curriculum and watch your skills grow</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Track Progress</h3>
-                    <p>Celebrate milestones and maintain your daily streak</p>
-                </div>
-            </div>
+            <!-- Contact Section -->
+            <section class="contact-section">
+                <h2>Still Need Help?</h2>
+                <p>Can't find the answer you're looking for? Our support team is here to help.</p>
+                <a href="mailto:zenfasthelp@gmail.com" class="contact-button">Contact Support</a>
+            </section>
         </div>
-    </section>
-
-    <!-- Download CTA -->
-    <section class="download">
-        <div class="container">
-            <h2>Start Your Fluency Journey Today</h2>
-            <p>Join thousands of learners improving their English with Fluentry</p>
-            <a href="https://apps.apple.com/app/fluentry" class="cta-button">Download Now</a>
-        </div>
-    </section>
+    </main>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2025 Fluentry. All rights reserved.</p>
             <p>
-                <a href="/support">Support</a>
+                <a href="/">Home</a>
                 <a href="/privacy">Privacy Policy</a>
                 <a href="mailto:zenfasthelp@gmail.com">Contact</a>
             </p>
